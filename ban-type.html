@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>Select Ban Type | UnbanFFID</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">UNBAN<span>FFID</span></a>
+    <a href="index.html" class="back-link">← HOME</a>
+  </header>
+
+  <main class="plans">
+    <div class="section-heading">
+      <span class="eyebrow">STEP 01 / ACCOUNT STATUS</span>
+      <h2>Select your ban type</h2>
+      <p>Choose the ban message displayed in your game.</p>
+    </div>
+
+    <div class="plan-grid">
+      <article class="plan-card">
+        <div class="plan-icon">◷</div>
+        <h3>Temporary Ban</h3>
+        <p>For an account showing a limited-time ban.</p>
+        <div class="price">₹49 <small>INR</small></div>
+        <button class="select-btn"
+          data-type="Temporary Ban" data-price="49">
+          CONTINUE
+        </button>
+      </article>
+
+      <article class="plan-card featured">
+        <div class="plan-icon">✦</div>
+        <h3>Permanent Ban</h3>
+        <p>For an account showing a permanent ban.</p>
+        <div class="price">₹149 <small>INR</small></div>
+        <button class="select-btn"
+          data-type="Permanent Ban" data-price="149">
+          CONTINUE
+        </button>
+      </article>
+    </div>
+
+    <section id="next-step" class="next-step" hidden>
+      <span class="eyebrow">YOUR SELECTION</span>
+      <h2 id="selected-type"></h2>
+      <p>Displayed fee: <strong id="selected-price"></strong></p>
+      <p class="notice">
+        THE TOOL BYPASS YOUR ACCOUNT SUSPENSSION. IT GUARANTEE TO YOUR ACCOUNT RECOVERY
+      </p>
+      <button id="continue-btn" class="primary-btn">
+        CONTINUE 
+      </button>
+    </section>
+
+    <p class="disclaimer">
+      UnbanFFID is independent and is affiliated with Garena.
+      This is an actual appeal tool which uses official Garena support.
+    </p>
+  </main>
+
+  <footer>UNBANFFID <span>•</span> FULLY VERIFIED</footer>
+  <script src="ban-type.js"></script>
+</body>
+</html>

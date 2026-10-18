@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <title>Account Request | UnbanFFID</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">UNBAN<span>FFID</span></a>
+    <span class="demo-tag">ACCOUNT REQUEST</span>
+  </header>
+
+  <main class="request-page">
+    <section id="request-form-section" class="request-card">
+      <span class="eyebrow">ACCOUNT INFORMATION</span>
+      <h1>Submit your request</h1>
+      <p class="muted">
+        Enter your Free Fire UID and the region associated
+        with your account.
+      </p>
+
+      <form id="account-form">
+        <label for="ff-uid">Free Fire UID</label>
+        <input
+          id="ff-uid"
+          name="uid"
+          type="text"
+          inputmode="numeric"
+          pattern="[0-9]{6,20}"
+          minlength="6"
+          maxlength="20"
+          placeholder="Enter your FF UID"
+          required
+        >
+
+        <label for="region">Account region</label>
+        <select id="region" name="region" required>
+          <option value="">Select your region</option>
+          <option value="India">India</option>
+          <option value="North America">North America</option>
+          <option value="South America">South America</option>
+          <option value="Europe">Europe</option>
+          <option value="Middle East">Middle East</option>
+          <option value="Indonesia">Indonesia</option>
+          <option value="Thailand">Thailand</option>
+          <option value="Vietnam">Vietnam</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <p class="notice">
+          This page cannot directly remove a Garena ban.
+          Do not enter your password or OTP.
+        </p>
+
+        <button type="submit" class="primary-btn">
+          START ACCOUNT CHECK
+        </button>
+      </form>
+    </section>
+
+    <section id="terminal-section" class="terminal-section" hidden>
+      <div class="terminal-top">
+        <div class="terminal-lights">
+          <span></span><span></span><span></span>
+        </div>
+        <span>UNBANFFID // REQUEST CONSOLE</span>
+      </div>
+
+      <div id="terminal" class="terminal" aria-live="polite"></div>
+      <p id="terminal-result" class="terminal-result"></p>
+    </section>
+  </main>
+
+  <footer>UNBANFFID <span>•</span> ACCOUNT REQUEST</footer>
+  <script src="request.js"></script>
+</body>
+</html>
