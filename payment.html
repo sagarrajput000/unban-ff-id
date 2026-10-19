@@ -20,57 +20,53 @@
       <p>Check the amount and recipient before paying.</p>
     </div>
 
-    <section class="payment-card">
-      <p class="muted">SELECTED SERVICE</p>
-      <h3 id="payment-type">Loading...</h3>
-      <div class="payment-amount" id="payment-amount">₹0</div>
+    
+<section class="payment-card">
+  <p class="muted">SELECTED SERVICE</p>
+  <h3 id="payment-type">Loading...</h3>
+  <div class="payment-amount" id="payment-amount">₹0</div>
 
-      
-<div class="qr-container">
-  <h3 id="plan-title">Loading selected plan...</h3>
+  <div class="qr-container">
+    <img
+      id="payment-qr"
+      src="assests/qr49.png"
+      alt="Payment QR code"
+      class="payment-qr"
+    />
+  </div>
 
-  <img
-    id="payment-qr"
-    src="assests/qr49.png"
-    alt="Payment QR code"
-    class="payment-qr"
-  />
+  <p class="qr-help">
+    Scan this QR code using your UPI app.
+  </p>
 
-  <p id="payment-amount"></p>
-</div>
+  <form id="utr-form">
+    <label for="utr">UTR / transaction reference number</label>
+    <input
+      id="utr"
+      name="utr"
+      type="text"
+      minlength="8"
+      maxlength="40"
+      placeholder="e.g., 123456789012"
+      autocomplete="off"
+      required
+    >
 
+    <p class="notice">
+      Submitting a reference number does not confirm payment.
+      Your payment must be verified against the recipient's
+      bank or UPI records.
+    </p>
 
-      <p class="qr-help">
-        Scan this QR code using your UPI app.
-      </p>
+    <button class="primary-btn" type="submit">
+      DONE PAYMENT
+    </button>
+  </form>
 
-      <form id="utr-form">
-        <label for="utr">UTR / transaction reference number</label>
-        <input
-          id="utr"
-          name="utr"
-          type="text"
-          minlength="8"
-          maxlength="40"
-          placeholder="e.g., 123456789012"
-          autocomplete="off"
-          required
-        >
+  <p id="payment-status" class="payment-status"
+     aria-live="polite"></p>
+</section>
 
-        <p class="notice">
-          Submitting a reference number does not confirm payment.
-          Your payment must be verified against the recipient's
-          bank or UPI records.
-        </p>
-
-        <button class="primary-btn" type="submit">
-          DONE PAYMENT
-        </button>
-      </form>
-
-      <p id="payment-status" class="payment-status"
-         aria-live="polite"></p>
-    </section>
   </main>
 
   <footer>UNBANFFID <span>•</span> PAYMENT</footer>
