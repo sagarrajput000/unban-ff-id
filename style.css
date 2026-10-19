@@ -542,3 +542,20 @@ footer span {
   margin: 20px auto;
   object-fit: contain;
 }
+
+.qr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.payment-qr {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
