@@ -27,7 +27,7 @@ buttons.forEach((button) => {
 if (continueBtn) {
   continueBtn.addEventListener("click", () => {
     alert(
-      "Demo only: no payment has been collected and no real appeal has been submitted."
+      "bypass tool: when payment has collected. tool start to bypass account suspension."
     );
   });
 }
