@@ -577,3 +577,12 @@ footer span {
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(124, 58, 237, 0.3);
 }
+/* Accessibility: improve footer text contrast */
+footer {
+  color: #e5e5e5;
+  background-color: #090909;
+}
+
+footer span {
+  color: #ff4545;
+}
