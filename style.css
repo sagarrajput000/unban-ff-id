@@ -701,3 +701,133 @@ footer span {
     font-size: 13px;
   }
 }
+/* FREE FIRE ACCOUNT SUSPENSION EXAMPLE */
+
+.ban-example {
+  position: relative;
+  overflow: hidden;
+  padding: 75px 6%;
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(255, 204, 0, 0.07),
+      transparent 65%
+    ),
+    #080a0e;
+  border-top: 1px solid #242830;
+  border-bottom: 1px solid #242830;
+}
+
+.ban-example-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ban-example-label {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 7px 13px;
+  border: 1px solid rgba(255, 204, 0, 0.35);
+  border-radius: 4px;
+  color: #ffcc00;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.ban-example h2 {
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-size: clamp(27px, 4vw, 43px);
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: -0.7px;
+}
+
+.ban-example h2 span {
+  display: block;
+  margin-top: 5px;
+  color: #ffcc00;
+}
+
+.ban-example-text {
+  max-width: 650px;
+  margin: 0 auto 35px;
+  color: #a5abb5;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.ban-example-image {
+  position: relative;
+  width: 100%;
+  padding: 8px;
+  background: linear-gradient(
+    135deg,
+    #ffcc00,
+    #665300,
+    #ffcc00
+  );
+  border-radius: 13px;
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.4);
+}
+
+.ban-example-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #080a0e;
+}
+
+.ban-example-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 850px;
+  margin: 24px auto 0;
+  padding: 18px 20px;
+  text-align: left;
+  background: #11151b;
+  border: 1px solid #272d35;
+  border-radius: 8px;
+}
+
+.ban-example-note .note-icon {
+  flex-shrink: 0;
+  color: #ffcc00;
+  font-size: 21px;
+}
+
+.ban-example-note p {
+  margin: 0;
+  color: #aeb5c0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .ban-example {
+    padding: 48px 5%;
+  }
+
+  .ban-example-text {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .ban-example-image {
+    padding: 4px;
+    border-radius: 8px;
+  }
+
+  .ban-example-image img {
+    border-radius: 5px;
+  }
+
+  .ban-example-note {
+    padding: 14px;
+    gap: 9px;
+  }
+}
