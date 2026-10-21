@@ -995,17 +995,47 @@ footer span {
   }
 }
 
+
 @media (max-width: 650px) {
   .stats-section {
-    grid-template-columns: 1fr;
-    gap: 14px;
-    max-width: 380px;
+    width: calc(100% - 20px);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 7px;
+    padding: 0;
+    margin: 25px auto;
   }
 
   .stat-card {
-    padding: 24px 16px;
+    min-width: 0;
+    padding: 18px 4px;
+    border-radius: 9px;
+    overflow-wrap: anywhere;
+  }
+
+  .stat-icon {
+    width: 26px;
+    height: 26px;
+    margin-bottom: 10px;
+  }
+
+  .stat-number {
+    font-size: 18px;
+  }
+
+  .stat-card h3 {
+    font-size: 11px;
+  }
+
+  .stat-card p {
+    font-size: 10px;
+  }
+
+  .stat-game-title {
+    font-size: 9px;
+    letter-spacing: 0.3px;
   }
 }
+
 
 @media (prefers-reduced-motion: reduce) {
   .stat-card {
