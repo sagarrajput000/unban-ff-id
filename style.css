@@ -1045,3 +1045,379 @@ footer span {
     transition: none;
   }
 }
+/* =================================
+   DETAILED BAN INFORMATION PAGE
+================================= */
+
+.ban-page {
+  background: #080808;
+  overflow-x: hidden;
+}
+
+.ban-page .plans {
+  position: relative;
+  padding: 65px 5%;
+  background:
+    radial-gradient(
+      ellipse at 10% 20%,
+      rgba(255, 0, 0, 0.12),
+      transparent 35%
+    ),
+    radial-gradient(
+      ellipse at 90% 70%,
+      rgba(140, 0, 255, 0.10),
+      transparent 35%
+    ),
+    #080808;
+}
+
+.ban-page .section-heading {
+  max-width: 750px;
+  margin: 0 auto 45px;
+}
+
+.ban-page .section-heading h1 {
+  font-size: clamp(32px, 5vw, 55px);
+  font-weight: 900;
+  line-height: 1.15;
+  margin: 15px 0;
+}
+
+.ban-page .section-heading h1 span {
+  color: #ff3030;
+}
+
+.ban-page .section-heading p {
+  color: #bdbdbd;
+  font-size: 16px;
+}
+
+
+/* CARD GRID */
+
+.ban-page .plan-grid {
+  max-width: 1050px;
+  gap: 28px;
+}
+
+.ban-page .detailed-card {
+  position: relative;
+  min-width: 0;
+  padding: 28px;
+  overflow: hidden;
+  border-radius: 18px;
+  background:
+    radial-gradient(
+      circle at 90% 15%,
+      rgba(255, 30, 30, 0.16),
+      transparent 45%
+    ),
+    linear-gradient(145deg, #191919, #080808);
+  transition: transform 0.3s ease;
+}
+
+.ban-page .detailed-card:hover {
+  transform: translateY(-5px);
+}
+
+.ban-page .temporary-card {
+  border: 1px solid #ff3030;
+  box-shadow: 0 0 22px rgba(255, 0, 0, 0.15);
+}
+
+.ban-page .permanent-card {
+  border: 1px solid #b52cff;
+  background:
+    radial-gradient(
+      circle at 90% 15%,
+      rgba(170, 0, 255, 0.19),
+      transparent 45%
+    ),
+    linear-gradient(145deg, #191019, #080808);
+  box-shadow: 0 0 22px rgba(170, 0, 255, 0.15);
+}
+
+
+/* CARD TOP */
+
+.ban-page .card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.ban-page .plan-icon {
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  border-radius: 50%;
+  background: rgba(255, 30, 30, 0.10);
+  border: 1px solid #ff3030;
+  color: #ff3030;
+  font-size: 35px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.22);
+}
+
+.ban-page .permanent-card .plan-icon {
+  border-color: #c12cff;
+  color: #d45aff;
+  background: rgba(180, 30, 255, 0.10);
+  box-shadow: 0 0 20px rgba(180, 30, 255, 0.22);
+}
+
+.ban-page .card-badge {
+  padding: 7px 12px;
+  border-radius: 5px;
+  background: rgba(255, 30, 30, 0.12);
+  border: 1px solid rgba(255, 30, 30, 0.5);
+  color: #ff5555;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.ban-page .permanent-card .card-badge {
+  color: #d45aff;
+  background: rgba(180, 30, 255, 0.12);
+  border-color: rgba(180, 30, 255, 0.5);
+}
+
+
+/* CARD TEXT */
+
+.ban-page .card-content h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.ban-page .card-content > p {
+  color: #c2c2c2;
+  font-size: 14px;
+  line-height: 1.7;
+  min-height: 48px;
+}
+
+
+/* ILLUSTRATIVE NOTICE */
+
+.notice-preview {
+  margin: 25px 0;
+  padding: 5px;
+  border-radius: 9px;
+  transform: skewY(-2deg);
+}
+
+.temporary-notice {
+  background: linear-gradient(
+    135deg,
+    #ff2929,
+    #501010,
+    #ff2929
+  );
+}
+
+.permanent-notice {
+  background: linear-gradient(
+    135deg,
+    #c12cff,
+    #351044,
+    #ff2929
+  );
+}
+
+.notice-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
+  background: #a71919;
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.permanent-notice .notice-header {
+  background: #641c8b;
+}
+
+.notice-body {
+  min-height: 180px;
+  padding: 22px;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(255, 30, 30, 0.14),
+      transparent 70%
+    ),
+    #0b0b0b;
+}
+
+.notice-symbol {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 10px;
+  border: 2px solid #ff4545;
+  border-radius: 50%;
+  color: #ff4545;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.notice-body h3 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.notice-body p {
+  max-width: 300px;
+  margin: auto;
+  color: #bdbdbd;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.notice-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 17px;
+  color: #ff5555;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.notice-status span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff3030;
+  box-shadow: 0 0 10px #ff3030;
+}
+
+
+/* FEATURES */
+
+.ban-page .feature-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.ban-page .feature-list div {
+  color: #e5e5e5;
+  font-size: 13px;
+}
+
+.ban-page .feature-list div::first-letter {
+  color: #ff4545;
+}
+
+
+/* INFORMATION */
+
+.ban-information {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  max-width: 1050px;
+  margin: 45px auto 10px;
+  padding: 25px;
+  border: 1px solid #ff3434;
+  border-radius: 12px;
+  background:
+    linear-gradient(
+      110deg,
+      rgba(255, 30, 30, 0.10),
+      #101010
+    );
+}
+
+.information-icon {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #ff3434;
+  border-radius: 50%;
+  color: #ff4545;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.ban-information h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.ban-information p {
+  color: #d0d0d0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .ban-page .plans {
+    padding: 45px 16px;
+  }
+
+  .ban-page .section-heading {
+    margin-bottom: 30px;
+  }
+
+  .ban-page .section-heading h1 {
+    font-size: 34px;
+  }
+
+  .ban-page .section-heading p {
+    font-size: 14px;
+  }
+
+  .ban-page .plan-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .ban-page .detailed-card {
+    padding: 21px;
+    border-radius: 14px;
+  }
+
+  .ban-page .plan-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 29px;
+  }
+
+  .ban-page .card-content h2 {
+    font-size: 23px;
+  }
+
+  .notice-body {
+    min-height: 165px;
+    padding: 18px 12px;
+  }
+
+  .ban-information {
+    padding: 18px;
+    gap: 12px;
+  }
+
+  .ban-information h2 {
+    font-size: 16px;
+  }
+
+}
