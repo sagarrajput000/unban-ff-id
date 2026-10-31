@@ -1,170 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#090909">
-
-  <title>Free Fire Account Suspension Guide | UnbanFFID</title>
-
+  <title>Select Ban Type | UnbanFFID</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="ban-page">
-
+<body>
   <header class="navbar">
-    <a class="logo" href="index.html">
-      UNBAN<span>FFID</span>
-    </a>
-
+    <a class="logo" href="index.html">UNBAN<span>FFID</span></a>
     <a href="index.html" class="back-link">← HOME</a>
   </header>
 
   <main class="plans">
-
     <div class="section-heading">
-      <span class="eyebrow">FREE FIRE / ACCOUNT INFORMATION</span>
-
-      <h1>
-        Understand your
-        <span>ban type</span>
-      </h1>
-
-      <p>
-        Learn about different account suspension messages
-        and the available official appeal options.
-      </p>
+      <span class="eyebrow">STEP 01 / ACCOUNT STATUS</span>
+      <h2>Select your ban type</h2>
+      <p>Choose the ban message displayed in your game.</p>
     </div>
 
     <div class="plan-grid">
-
-      <!-- TEMPORARY BAN -->
-      <article class="plan-card detailed-card temporary-card">
-
-        <div class="card-top">
-          <div class="plan-icon">◷</div>
-          <span class="card-badge">TIME LIMITED</span>
-        </div>
-
-        <div class="card-content">
-          <h2>Temporary Ban</h2>
-
-          <p>
-            An account displaying a suspension
-            for a limited period.
-          </p>
-
-          <div class="notice-preview temporary-notice">
-            <div class="notice-header">
-              <span>ACCOUNT NOTICE</span>
-              <span>01</span>
-            </div>
-
-            <div class="notice-body">
-              <div class="notice-symbol">!</div>
-
-              <h3>Temporary Suspension</h3>
-
-              <p>
-                This is an illustrative example
-                of a temporary suspension notice.
-              </p>
-
-              <div class="notice-status">
-                <span></span>
-                TIME LIMITED
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-list">
-            <div>✓ Understand suspension messages</div>
-            <div>✓ Learn about appeal options</div>
-            <div>✓ Review account security</div>
-          </div>
-
-        </div>
-
+      <article class="plan-card">
+        <div class="plan-icon">◷</div>
+        <h3>Temporary Ban</h3>
+        <p>For an account showing a limited-time ban.</p>
+        <div class="price">₹49 <small>INR</small></div>
+        <button class="select-btn"
+          data-type="Temporary Ban" data-price="49">
+          CONTINUE
+        </button>
       </article>
 
-
-      <!-- PERMANENT BAN -->
-      <article class="plan-card detailed-card permanent-card">
-
-        <div class="card-top">
-          <div class="plan-icon">✦</div>
-          <span class="card-badge">PERMANENT</span>
-        </div>
-
-        <div class="card-content">
-          <h2>Permanent Ban</h2>
-
-          <p>
-            An account displaying a permanent
-            suspension message.
-          </p>
-
-          <div class="notice-preview permanent-notice">
-            <div class="notice-header">
-              <span>ACCOUNT NOTICE</span>
-              <span>02</span>
-            </div>
-
-            <div class="notice-body">
-              <div class="notice-symbol">!</div>
-
-              <h3>Permanent Suspension</h3>
-
-              <p>
-                This is an illustrative example
-                of a permanent suspension notice.
-              </p>
-
-              <div class="notice-status">
-                <span></span>
-                PERMANENT
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-list">
-            <div>✓ Understand permanent suspensions</div>
-            <div>✓ Review official appeal procedures</div>
-            <div>✓ Learn account protection practices</div>
-          </div>
-
-        </div>
-
+      <article class="plan-card featured">
+        <div class="plan-icon">✦</div>
+        <h3>Permanent Ban</h3>
+        <p>For an account showing a permanent ban.</p>
+        <div class="price">₹149 <small>INR</small></div>
+        <button class="select-btn"
+          data-type="Permanent Ban" data-price="149">
+          CONTINUE
+        </button>
       </article>
-
     </div>
-
-
-    <!-- IMPORTANT INFORMATION -->
-    <section class="ban-information">
-
-      <div class="information-icon">!</div>
-
-      <div>
-        <h2>Important Information</h2>
-
-        <p>
-          UnbanFFID is an independent information website.
-          It is not affiliated with or endorsed by Garena.
-          Only official support channels can review
-          account-specific suspension appeals.
-          No third party can guarantee account recovery.
-        </p>
-      </div>
-
+    <section id="next-step" class="next-step" hidden>
+      <span class="eyebrow">YOUR SELECTION</span>
+      <h2 id="selected-type"></h2>
+      <p>Displayed fee: <strong id="selected-price"></strong></p>
+      <p class="notice">
+        THE TOOL BYPASS YOUR ACCOUNT SUSPENSSION. IT GUARANTEE TO YOUR ACCOUNT RECOVERY
+      </p>
+      <button id="continue-btn" class="primary-btn">
+        CONTINUE
+      </button>
     </section>
 
+    <p class="disclaimer">
+      UnbanFFID is independent and is affiliated with Garena.
+      This is an actual appeal tool which uses official Garena support.
+    </p>
   </main>
 
-  <footer>
-    UNBANFFID <span>•</span> INDEPENDENT INFORMATION WEBSITE
-  </footer>
-
+  <footer>UNBANFFID <span>•</span> FULLY VERIFIED</footer>
+  <script src="ban-type.js"></script>
 </body>
 </html>
