@@ -1417,6 +1417,23 @@ footer span {
   }
 
   .ban-information h2 {
+    .upi-pay-button {
+  display: block;
+  margin: 20px 0;
+  padding: 15px;
+  background: #16a34a;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.upi-pay-button:hover {
+  background: #15803d;
+}
     font-size: 16px;
   }
 
