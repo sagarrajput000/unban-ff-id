@@ -16,7 +16,7 @@ const validPlan =
   (type === "Permanent Ban" && price === 149);
 
 if (validPlan) {
-  upiPayButton.href =
+  upipaybutton.href =
   `upi://pay?pa=sagarpratap@fam` +
   `&pn=Sagar%20pratap` +
   `&am=${price.toFixed(2)}` +
