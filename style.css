@@ -1438,3 +1438,18 @@ footer span {
   }
 
 }
+.upi-pay-button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 20px 0;
+  padding: 16px;
+  background: #16a34a;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+}
