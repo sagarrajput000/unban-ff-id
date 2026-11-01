@@ -23,7 +23,7 @@ if (validPlan) {
     `&cu=INR` +
     `&tn=${encodeURIComponent(type + " Plan Payment")}`;
 
-  upiPayButton.textContent = `PAY NOW ₹${price}`;
+  upiPayButton.textContent = `PAY VIA UPI APP ₹${price}`;
   upiPayButton.hidden = false;
   planTitle.textContent = `${type} Plan`;
   paymentAmount.textContent = `₹${price}`;
