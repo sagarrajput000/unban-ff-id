@@ -6,7 +6,7 @@ const price = Number(params.get("price"));
 const qrImage = document.getElementById("payment-qr");
 const planTitle = document.getElementById("payment-type");
 const paymentAmount = document.getElementById("payment-amount");
-const upipaybutton = document.getElementById("upi-pay-button")
+const upiPayButton = document.getElementById("upi-pay-button");
 const form = document.getElementById("utr-form");
 const utrInput = document.getElementById("utr");
 const status = document.getElementById("payment-status");
@@ -16,14 +16,15 @@ const validPlan =
   (type === "Permanent Ban" && price === 149);
 
 if (validPlan) {
-  upipaybutton.href =
-  `upi://pay?pa=sagarpratap@fam` +
-  `&pn=Sagar%20pratap` +
-  `&am=${price.toFixed(2)}` +
-  `&cu=INR` +
-  `&tn=${encodeURIComponent(type + " Plan Payment")}`;
+  upiPayButton.href =
+    `upi://pay?pa=sagarpratap@fam` +
+    `&pn=Sagar%20pratap` +
+    `&am=${price.toFixed(2)}` +
+    `&cu=INR` +
+    `&tn=${encodeURIComponent(type + " Plan Payment")}`;
 
-upiPayButton.textContent = `PAY NOW ₹${price}`;
+  upiPayButton.textContent = `PAY NOW ₹${price}`;
+  upiPayButton.hidden = false;
   planTitle.textContent = `${type} Plan`;
   paymentAmount.textContent = `₹${price}`;
   qrImage.src =
